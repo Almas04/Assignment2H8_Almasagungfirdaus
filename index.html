@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>assigment2hacktiv8</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="img/Hacktiv8.png" alt="Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Profil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portofolio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tutorial
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">HTML</a>
+          <a class="dropdown-item" href="#">CSS</a>
+          <a class="dropdown-item" href="#">JavaScript</a>
+          <a class="dropdown-item" href="#">jQuery</a>
+          <a class="dropdown-item" href="#">CodeIgniter</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- LOGIN AND REGISTER -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <button class="btn btn-login">Login</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-daftar">Daftar</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--Heading-->
+<div class="heading">
+    <img src="img/Hacktiv8.png" alt="Photo Profile" class="photo">
+    <div class="d-flex">
+        <h5 id="nama">....</h5>
+        <h6 id="role">....</h6>
+
+        <div class="button1">
+            <button class="edit" onclick="editData()" id="btn-edit">Edit</button>
+            <br>
+            <button class="resume" onclick="resumeData()" id="btn-resume">Resume</button>
+        </div>
+    </div>
+
+    <div class="biodata">
+        <pre><b>Availability</b>    :</pre>
+        <pre><b>Umur</b>            :</pre>
+        <pre><b>Hobi </b>           : </pre>
+        <pre><b>Alamat </b>         : </pre>
+        <pre><b>Email  </b>         : </pre>
+    </div>
+
+    <div class="biodata-isi">
+        <pre id="availability">....</pre>
+        <pre id="umur">....</pre>
+        <pre id="hobi">....</pre>
+        <pre id="alamat">....</pre>
+        <pre id="email">....</pre>
+    </div>
+
+</div>
+
+<!-- Form -->
+<div class=" container form">
+    <form>
+        <div>
+            <label for="nama" class="label" id="nama-label">Nama:</label>
+            <input type="text" class="input" name="nama" id="nama-input" required>
+        </div>
+        <div>
+            <label for="role" class="label" id="role-label">Role:</label>
+            <input type="text" class="input" name="role" id="role-input" required>
+        </div>
+        <div>
+            <label for="availability" class="label" id="availability-label">Availability:</label>
+            <input type="text" class="input" name="availability" id="availability-input" required>
+        </div>
+        <div>
+            <label for="umur" class="label" id="umur-label">Umur:</label>
+            <input type="number" class="input" name="umur" id="umur-input" required>
+        </div>
+        <div>
+            <label for="hobi" class="label" id="hobi-label">Hobi:</label>
+            <input type="text" class="input" name="hobi" id="hobi-input" required>
+        </div>
+        <div>
+            <label for="alamat" class="label" id="alamat-label">Alamat:</label>
+            <input type="text" class="input" name="alamat" id="alamat-input" required>
+            <div>
+                <label for="email" class="label" id="email-label">Email:</label>
+                <input type="email" class="input" name="email" id="email-input" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="button-form" id="simpan-btn">Submit</button>
+            </div>
+    </form>
+</div>
+
+<!-- Link to Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
